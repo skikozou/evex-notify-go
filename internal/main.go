@@ -14,9 +14,8 @@ func main() {
 		PadLevelText:           true,
 	})
 
-	cfg, err := config.LoadConfig()
+	_, err := config.LoadConfig()
 	if err != nil {
 		logrus.Error(err)
 	}
-	logrus.Error(cfg)
 }
